@@ -1,5 +1,5 @@
 fn main() {
-    let special_character = '@'; //default
+    let special_ccharacter = '@'; //default
     let alphabet:char = 'B';
     let surname = "Bolaji";
     let first_name = "Michael";
