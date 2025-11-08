@@ -4,9 +4,9 @@ fn main() {
     println!("\n Welcome to Moses Food joint!");
 
     
-    println!("====================================");
+    println!("");
     println!("             FOOD MENU              ");
-    println!("====================================");
+    println!("");
     println!("P = Poundo Yam/Edinkaiko Soup - 3200");
     println!("F = Fried Rice & Chicken - 3000");
     println!("A = Amala & Ewedu Soup - 2500");
@@ -52,9 +52,9 @@ fn main() {
         total
     };
 
-    println!("\n======================================");
+    println!("");
     println!("              Order Summary             ");
-    println!("========================================");
+    println!("");
     println!("Food: {}", food_name);
     println!("Quantity: {}", quantity);
     println!("Total (before discount): {:.2}", total);
