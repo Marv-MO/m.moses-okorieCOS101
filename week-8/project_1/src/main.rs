@@ -25,7 +25,7 @@ fn main(){
     },
     ];
 
-    let aps_levels = vec!["APS 1-2", "APS 3-5", "APS 5-8", "EL1 8-10", "EL2 10-13", "SES",];
+    let public_servant = vec!["APS 1-2", "APS 3-5", "APS 5-8", "EL1 8-10", "EL2 10-13", "SES",];
 
     println!("Enter staff role (e.g. Office Administrator, Lawyer):");
     let mut role_input = String::new();
@@ -48,12 +48,12 @@ fn main(){
 
     if let Some(mapping) = roles.iter().find(|r| r.role.eq_ignore_ascii_case(role)) {
         let _staff_position = mapping.levels[aps_index];
-        let aps_levels = aps_levels[aps_index];
+        let public_servant = public_servant[aps_index];
         println!("\n  Staff Classification Result  ");
         println!("Role: {}", mapping.role);
         println!("Years of experience: {}", experience);
         println!("Job Position: {}", experience);
-        println!("APS Level: {}", aps_levels);
+        println!("APS Level: {}", public_servant);
     } else {
         println!("Unfortunately, we cannot find you role in this place. Bye!");
     }
